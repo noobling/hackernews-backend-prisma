@@ -1,21 +1,25 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var prisma_lib_1 = require("prisma-client-lib");
-var typeDefs = require("./prisma-schema").typeDefs;
+'use strict'
+Object.defineProperty(exports, '__esModule', { value: true })
+var prisma_lib_1 = require('prisma-client-lib')
+var typeDefs = require('./prisma-schema').typeDefs
 
 var models = [
   {
-    name: "User",
+    name: 'User',
     embedded: false
   },
   {
-    name: "Link",
+    name: 'Link',
+    embedded: false
+  },
+  {
+    name: 'Vote',
     embedded: false
   }
-];
+]
 exports.Prisma = prisma_lib_1.makePrismaClientClass({
   typeDefs,
   models,
   endpoint: `https://eu1.prisma.sh/david-yu/temp/dev`
-});
-exports.prisma = new exports.Prisma();
+})
+exports.prisma = new exports.Prisma()
