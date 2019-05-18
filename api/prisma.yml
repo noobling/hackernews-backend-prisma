@@ -1,4 +1,5 @@
-endpoint: https://eu1.prisma.sh/david-yu/temp/dev
+#endpoint: ''
+endpoint: https://us1.prisma.sh/david-yu/hackernews-api/prod
 datamodel: datamodel.prisma
 
 generate:
